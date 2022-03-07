@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <link rel ="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <form action="./re_write.ejs" method="post">
+            <div>
+                <div>
+                    <input type="text" name="writer" id="name" placeholder="작성자" readonly/>
+                </div>
+                <div>
+                    <input type="password" name="password" id="password" placeholder="비밀번호" readonly/>
+                </div>
+                <div>
+                    <input type="text" name="title" id="title" placeholder="글 제목" readonly/>
+                </div>
+                <div>
+                    <textarea name="content" id="content" placeholder="글 내용" cols="30"></textarea>
+                </div>
+                <div class="bottom-function">
+                    <button name="delete">글 삭제</button>
+                    <button name="reply">답글</button>
+                    <button type="submit">글 수정</button>
+                    <button name="go_list">목록으로</button>
+                </div>
+            </div>
+        </form>
+    </body>
+</html>

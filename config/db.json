@@ -1,0 +1,11 @@
+{
+    "test":{
+        "username":"root",
+        "password":"1111",
+        "database":"list_board",
+        "host":"127.0.0.1",
+        "port":"3306",
+        "dialect":"mysql",
+        "acquireTimeout":30000
+    }
+}

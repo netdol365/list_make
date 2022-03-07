@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <ht>
+        <title></title>
+        <link rel = 'stylesheet' href='./stylesheet.css'/>
+        <script src="https://kit.fontawesome.com/6128eca70e.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="top-title">
+            <i class="fa-solid fa-bars-progress"></i>
+            <h1>게시판</h1>
+        </div>
+        <div>
+            <tr class="subject">
+                <td>번호</td>
+                <td>제목</td>
+                <td>작성자</td>
+                <td>작성일</td>
+            </tr>
+            <% for (let i = 0; i < rows.length; i++ ){
+              let data = rows[i]; 
+            }%>
+            <tr class="content_li">
+                <td><%data.BOARD_SEQ%></td>
+                <td><%data.BOARD_SUBJECT%></td>
+                <td><%data.BOARD_WRITER%></td>
+                <td><%data.INS_DATE%></td>
+            </tr>
+        </div>
+        <button name="btn_write" type="button" 
+        onclick="location.href" >글쓰기</button>
+            
+        
+    </body>
+</html>
